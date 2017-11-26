@@ -3,6 +3,17 @@
   border: 1px solid black;
 }
 
+/* TITLES */
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 30px;
+}
 
 /* header */
 header {
@@ -16,6 +27,10 @@ header {
   flex-wrap: wrap;
   border-bottom: 1px solid black;
   height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
 }
 
 nav {
@@ -49,6 +64,7 @@ nav a:visited {
 /* content */
 
 .content {
+  margin-top: 70px;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -62,7 +78,6 @@ nav a:visited {
 .medium,
 .small {
   margin-top: 20px;
-
 }
 
 .news {
@@ -72,11 +87,23 @@ nav a:visited {
 
 .content .large {
   width: 630px;
-  height: 1632px;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+
+.container-news {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-separation {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content .medium {
@@ -88,7 +115,8 @@ nav a:visited {
 }
 
 .half {
-  width: 48%;
+  width: 100%;
+  display: block;
 }
 
 .image {
@@ -127,5 +155,32 @@ nav a:visited {
 /* END CONTENT */
 /* START FOOTER */
 
+footer {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  height: 300px;
+}
+
+footer .title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer .space {
+  margin: 0 30px;
+}
+
+footer a {
+  margin-right: 20px;
+}
 
 /* END FOOTER */
